@@ -1,0 +1,39 @@
+{
+  "name": "com.piq.piqapp",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^10.1.2",
+    "cordova-plugin-file": "^7.0.0",
+    "cordova-plugin-file-downloader": "^0.4.0",
+    "cordova-plugin-file-md5": "^0.3.3",
+    "cordova-plugin-file-transfer": "github:apache/cordova-plugin-file-transfer",
+    "cordova-plugin-network-information": "^3.0.0",
+    "cordova-plugin-zip": "^3.1.0",
+    "phonegap-plugin-barcodescanner": "^8.1.0",
+    "phonegap-plugin-contentsync": "^1.4.2"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "phonegap-plugin-contentsync": {},
+      "phonegap-plugin-barcodescanner": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-file-downloader": {}
+    }
+  }
+}
